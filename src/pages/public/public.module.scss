@@ -1,0 +1,101 @@
+.main {
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+
+    flex-direction: column;
+    .player {
+        width: 100vw;
+        height: 90px;
+        background-color: rgb(19, 12, 28);
+        color: white;
+        flex: none;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+.main-top {
+    width: 100%;
+    flex: auto;
+    display: flex;
+}
+.SidebarLeft {
+    width: 240px;
+    min-height: 100vh;
+    background-color: rgb(35, 26, 46);
+}
+.SidebarRight {
+    width: 329px;
+
+    background-color: rgb(24, 15, 35);
+    border-left: 2px solid #333;
+}
+.main-center {
+    flex: 1;
+    background-color: rgb(24, 15, 35);
+    height: 3000px;
+    // overflow-y: auto;
+}
+
+//header center
+
+.container {
+    background-color: rgba(23, 16, 35, 0.98);
+    height: 70px;
+    padding: 0 59px;
+    display: flex;
+    position: fixed;
+    width: 1222px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+//album
+
+.album {
+    margin-top: 110px;
+    width: 100%;
+    overflow-y: auto;
+    background-color: #333;
+    padding: 0 59px 0 59px;
+    display: flex;
+    justify-content: space-between;
+    .album-left {
+        width: 300px;
+
+        height: auto;
+        margin-right: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        a {
+            text-align: center;
+            font-size: 12px;
+            color: #ffffff80;
+        }
+
+        h3 {
+            font-size: 20px;
+            color: #fff;
+            margin-top: 10px;
+        }
+        .album-top span {
+            font-size: 12px;
+            color: #ffffff80;
+        }
+    }
+    .album-right {
+        width: 775px;
+        background-color: azure;
+        height: auto;
+    }
+
+    //albumlefft
+    .album-left img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+}

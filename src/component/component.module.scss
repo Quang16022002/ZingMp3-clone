@@ -1,0 +1,240 @@
+.container {
+    position: fixed;
+    .header-logo {
+        width: 240px;
+        height: 70px;
+        cursor: pointer;
+        top: 0;
+        padding: 0 25px 0 28px;
+        display: flex;
+        align-items: center;
+        img {
+            width: 120px;
+            height: 40px;
+        }
+    }
+
+    .SidebarLeft {
+        display: flex;
+        flex-direction: column;
+    }
+}
+.active {
+    display: flex;
+    align-items: center;
+    opacity: 0.7;
+    padding: 12px 25px;
+    border-left: 3px solid rgb(35, 26, 46);
+
+    &:hover {
+        background-color: rgb(66, 59, 74);
+        opacity: 0.85;
+        border-left: 3px solid rgb(155, 77, 223);
+    }
+    span {
+        color: #fff;
+        margin-left: 15px;
+        font-size: 14px;
+    }
+}
+a {
+    text-decoration: none;
+}
+
+//header
+
+.header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.header-left {
+    display: flex;
+}
+
+// operation
+
+.operation {
+    display: flex;
+    align-items: center;
+}
+.search {
+    display: flex;
+    align-items: center;
+    width: 440px;
+    height: 40px;
+    background-color: rgb(54, 46, 63);
+    border-radius: 20px;
+    input {
+        font-size: 14px;
+        color: rgb(218, 218, 218);
+        width: 380px;
+        height: 100%;
+        outline: none;
+        background-color: transparent;
+        border: none;
+    }
+}
+input::placeholder {
+    color: rgb(218, 218, 218);
+}
+
+.icon-search {
+    margin: 0 4px 0 7px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    width: 274px;
+    height: 100%;
+    .download {
+        width: 175px;
+        background-color: rgb(54, 46, 63);
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a {
+            padding: 8px;
+            display: flex;
+            align-items: center;
+            color: rgb(194, 115, 237);
+            font-weight: 500;
+            span {
+                margin-left: 6px;
+            }
+        }
+    }
+
+    .option,
+    img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: rgb(54, 46, 63);
+        margin-left: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+            margin-right: 10px;
+        }
+    }
+}
+
+//banner
+.banner {
+    padding: 32px 59px 0 59px;
+    overflow: hidden;
+    display: flex;
+    padding-top: 100px;
+    width: 100%;
+
+    img {
+        width: 32%;
+        border-radius: 10px;
+    }
+    img + img {
+        margin-left: 24px;
+    }
+}
+//Player
+.player {
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+
+    height: 100%;
+}
+
+.player-left {
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+.player-center {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.player-right {
+    width: 30%;
+
+    background-color: rgb(157, 255, 0);
+}
+
+//player-left
+.player-left-img img {
+    width: 64px;
+    height: 64px;
+    border-radius: 5px;
+}
+
+.player-left-title {
+    display: flex;
+    flex-direction: column;
+    padding: 13px 0 13px 10px;
+
+    .title-song {
+        font-size: 15px;
+    }
+    .title-name {
+        font-size: 12px;
+        color: #ffffff80;
+    }
+}
+
+.player-left-option {
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+}
+.option {
+    cursor: pointer;
+}
+
+///main center
+.player-center-option {
+    display: flex;
+    align-items: center;
+    width: 248px;
+    height: 50px;
+    justify-content: space-between;
+    padding: 0 20px;
+
+    .player-center-option-a {
+        width: 32px;
+        height: 32px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        cursor: pointer;
+
+        &:hover {
+            background-color: rgb(47, 38, 58);
+        }
+    }
+    .player-center-option-play {
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        border: 1px solid #fff;
+        &:hover {
+            border: 1px solid rgb(194, 115, 237);
+            .play {
+                color: rgb(194, 115, 237);
+            }
+        }
+    }
+}
